@@ -8,9 +8,9 @@ template <class T> class SmoothSensor
 {
     private:
 		const uint32_t _bufferSize; //number of elements in buffer
-	    T *_buffer; //the readings from the analog input
+		T *_buffer; //the readings from the analog input
 		uint32_t _index; //the index of the current reading  
-        T _sum; //the running sum
+		T _sum; //the running sum
 
 	public:
 		SmoothSensor(uint32_t bufferSize); //ctor
